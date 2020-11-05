@@ -1,0 +1,567 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "sleep advisor",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ContinueIntent",
+                    "slots": [],
+                    "samples": [
+                        "continue",
+                        "last test",
+                        "last one",
+                        "go on"
+                    ]
+                },
+                {
+                    "name": "RecommendationIntent",
+                    "slots": [
+                        {
+                            "name": "totalSleepTime",
+                            "type": "AMAZON.DURATION",
+                            "samples": [
+                                "I sleep around {totalSleepTime}",
+                                "I sleep about {totalSleepTime}",
+                                "Around {totalSleepTime}",
+                                "About {totalSleepTime}",
+                                "{totalSleepTime}",
+                                "I sleep around {totalSleepTime} hours",
+                                "I sleep about {totalSleepTime} hours",
+                                "Around {totalSleepTime} hours",
+                                "About {totalSleepTime} hours",
+                                "{totalSleepTime} hours"
+                            ]
+                        },
+                        {
+                            "name": "vocationTotalSleepTime",
+                            "type": "AMAZON.DURATION",
+                            "samples": [
+                                "I sleep around {vocationTotalSleepTime}",
+                                "I sleep about {vocationTotalSleepTime}",
+                                "Around {vocationTotalSleepTime}",
+                                "About {vocationTotalSleepTime}",
+                                "{vocationTotalSleepTime}",
+                                "I sleep around {vocationTotalSleepTime} hours",
+                                "I sleep about {vocationTotalSleepTime} hours",
+                                "Around {vocationTotalSleepTime} hours",
+                                "About {vocationTotalSleepTime} hours",
+                                "{vocationTotalSleepTime} hours"
+                            ]
+                        },
+                        {
+                            "name": "epworthSleepinessScaleOne",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{epworthSleepinessScaleOne}"
+                            ]
+                        },
+                        {
+                            "name": "epworthSleepinessScaleTwo",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{epworthSleepinessScaleTwo}"
+                            ]
+                        },
+                        {
+                            "name": "epworthSleepinessScaleThree",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{epworthSleepinessScaleThree}"
+                            ]
+                        },
+                        {
+                            "name": "epworthSleepinessScaleFour",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{epworthSleepinessScaleFour}"
+                            ]
+                        },
+                        {
+                            "name": "epworthSleepinessScaleFive",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{epworthSleepinessScaleFive}"
+                            ]
+                        },
+                        {
+                            "name": "epworthSleepinessScaleSix",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{epworthSleepinessScaleSix}"
+                            ]
+                        },
+                        {
+                            "name": "epworthSleepinessScaleSeven",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{epworthSleepinessScaleSeven}"
+                            ]
+                        },
+                        {
+                            "name": "epworthSleepinessScaleEight",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{epworthSleepinessScaleEight}"
+                            ]
+                        },
+                        {
+                            "name": "fatigueSeverityScaleOne",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{fatigueSeverityScaleOne}"
+                            ]
+                        },
+                        {
+                            "name": "fatigueSeverityScaleTwo",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{fatigueSeverityScaleTwo}"
+                            ]
+                        },
+                        {
+                            "name": "fatigueSeverityScaleThree",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{fatigueSeverityScaleThree}"
+                            ]
+                        },
+                        {
+                            "name": "fatigueSeverityScaleFour",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{fatigueSeverityScaleFour}"
+                            ]
+                        },
+                        {
+                            "name": "fatigueSeverityScaleFive",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{fatigueSeverityScaleFive}"
+                            ]
+                        },
+                        {
+                            "name": "fatigueSeverityScaleSix",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{fatigueSeverityScaleSix}"
+                            ]
+                        },
+                        {
+                            "name": "fatigueSeverityScaleSeven",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{fatigueSeverityScaleSeven}"
+                            ]
+                        },
+                        {
+                            "name": "fatigueSeverityScaleEight",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{fatigueSeverityScaleEight}"
+                            ]
+                        },
+                        {
+                            "name": "fatigueSeverityScaleNine",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{fatigueSeverityScaleNine}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "start over",
+                        "{epworthSleepinessScaleOne}",
+                        "{epworthSleepinessScaleTwo}",
+                        "{epworthSleepinessScaleThree}",
+                        "{epworthSleepinessScaleFour}",
+                        "{epworthSleepinessScaleFive}",
+                        "{epworthSleepinessScaleSix}",
+                        "{epworthSleepinessScaleSeven}",
+                        "{epworthSleepinessScaleEight}",
+                        "{fatigueSeverityScaleOne}",
+                        "{fatigueSeverityScaleTwo}",
+                        "{fatigueSeverityScaleThree}",
+                        "{fatigueSeverityScaleFour}",
+                        "{fatigueSeverityScaleFive}",
+                        "{fatigueSeverityScaleSix}",
+                        "{fatigueSeverityScaleSeven}",
+                        "{fatigueSeverityScaleEight}",
+                        "{fatigueSeverityScaleNine}",
+                        "I sleep for {vocationTotalSleepTime} on the weekend",
+                        "I sleep for {totalSleepTime}",
+                        "I want to start over",
+                        "start the test"
+                    ]
+                }
+            ],
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "RecommendationIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "totalSleepTime",
+                            "type": "AMAZON.DURATION",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-totalSleepTime"
+                            }
+                        },
+                        {
+                            "name": "vocationTotalSleepTime",
+                            "type": "AMAZON.DURATION",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-vocationTotalSleepTime"
+                            }
+                        },
+                        {
+                            "name": "epworthSleepinessScaleOne",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-epworthSleepinessScaleOne"
+                            }
+                        },
+                        {
+                            "name": "epworthSleepinessScaleTwo",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-epworthSleepinessScaleTwo"
+                            }
+                        },
+                        {
+                            "name": "epworthSleepinessScaleThree",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-epworthSleepinessScaleThree"
+                            }
+                        },
+                        {
+                            "name": "epworthSleepinessScaleFour",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-epworthSleepinessScaleFour"
+                            }
+                        },
+                        {
+                            "name": "epworthSleepinessScaleFive",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-epworthSleepinessScaleFive"
+                            }
+                        },
+                        {
+                            "name": "epworthSleepinessScaleSix",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-epworthSleepinessScaleSix"
+                            }
+                        },
+                        {
+                            "name": "epworthSleepinessScaleSeven",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-epworthSleepinessScaleSeven"
+                            }
+                        },
+                        {
+                            "name": "epworthSleepinessScaleEight",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-epworthSleepinessScaleEight"
+                            }
+                        },
+                        {
+                            "name": "fatigueSeverityScaleOne",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-fatigueSeverityScaleOne"
+                            }
+                        },
+                        {
+                            "name": "fatigueSeverityScaleTwo",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-fatigueSeverityScaleTwo"
+                            }
+                        },
+                        {
+                            "name": "fatigueSeverityScaleThree",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-fatigueSeverityScaleThree"
+                            }
+                        },
+                        {
+                            "name": "fatigueSeverityScaleFour",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-fatigueSeverityScaleFour"
+                            }
+                        },
+                        {
+                            "name": "fatigueSeverityScaleFive",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-fatigueSeverityScaleFive"
+                            }
+                        },
+                        {
+                            "name": "fatigueSeverityScaleSix",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-fatigueSeverityScaleSix"
+                            }
+                        },
+                        {
+                            "name": "fatigueSeverityScaleSeven",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-fatigueSeverityScaleSeven"
+                            }
+                        },
+                        {
+                            "name": "fatigueSeverityScaleEight",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-fatigueSeverityScaleEight"
+                            }
+                        },
+                        {
+                            "name": "fatigueSeverityScaleNine",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-fatigueSeverityScaleNine"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Intent-RecommendationIntent.IntentSlot-totalSleepTime",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "How much sleep do you think you usually get in a 24 hour period?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-RecommendationIntent.IntentSlot-vocationTotalSleepTime",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "On the weekend (or when you have 3 or more days off), how much sleep do you usually get?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-RecommendationIntent.IntentSlot-epworthSleepinessScaleOne",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "How likely are you to doze off or fall asleep in the following situations, in contrast to feeling just tired? Please speak a number between 0 to 3 where 3 means strong agree. Sitting and reading?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-RecommendationIntent.IntentSlot-epworthSleepinessScaleTwo",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Watching TV?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-RecommendationIntent.IntentSlot-epworthSleepinessScaleThree",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Sitting, inactive in a public place (e.g. a theatre or a meeting)?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-RecommendationIntent.IntentSlot-epworthSleepinessScaleFour",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "As a passenger in a car for an hour without a break?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-RecommendationIntent.IntentSlot-epworthSleepinessScaleFive",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Lying down to rest in the afternoon when circumstances permit?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-RecommendationIntent.IntentSlot-epworthSleepinessScaleSix",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Sitting and talking to someone?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-RecommendationIntent.IntentSlot-epworthSleepinessScaleSeven",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Sitting quietly after a lunch without alcohol?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-RecommendationIntent.IntentSlot-epworthSleepinessScaleEight",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "In a car, while stopped for a few minutes in the traffic?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-RecommendationIntent.IntentSlot-fatigueSeverityScaleOne",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Below are a series of statements regarding your fatigue.  By fatigue we mean a sense of tiredness, lack of energy or total body give-out. We do not mean Sleepiness (the likelihood of falling asleep). Please speak a number between 1 to 7 where 7 means strong agree. My motivation is lower when I am fatigued?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-RecommendationIntent.IntentSlot-fatigueSeverityScaleTwo",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Exercise brings on my fatigue?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-RecommendationIntent.IntentSlot-fatigueSeverityScaleThree",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "I am easily fatigued?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-RecommendationIntent.IntentSlot-fatigueSeverityScaleFour",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Fatigue interferes with my physical functioning?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-RecommendationIntent.IntentSlot-fatigueSeverityScaleFive",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Fatigue causes frequent problems for me?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-RecommendationIntent.IntentSlot-fatigueSeverityScaleSix",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "My fatigue prevents sustained physical functioning?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-RecommendationIntent.IntentSlot-fatigueSeverityScaleSeven",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Fatigue interferes with carrying out certain duties and responsibilities?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-RecommendationIntent.IntentSlot-fatigueSeverityScaleEight",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Fatigue is among my three most disabling symptoms?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-RecommendationIntent.IntentSlot-fatigueSeverityScaleNine",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Fatigue interferes with my work, family, or social life?"
+                    }
+                ]
+            }
+        ]
+    }
+}
