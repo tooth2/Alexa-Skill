@@ -1,4 +1,4 @@
-# Alexa
+# Alexa-Skill
 **Alex Skill**
 This app is a "Alexa skill" to interact with Alexa/Echo devices when the user triggers it with voice. This app provides minimal fatures for the developer to get familiarized with the Alexa Skills SDK and AWS Lambda. This code shows how to create a skill using the Request Handler classes.
 ### Adding the ASK SDK ###
